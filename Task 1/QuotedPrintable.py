@@ -2,6 +2,8 @@
 from quopri import encodestring, decodestring 
 
 # Take user input
+
+# The input that is passed is: " मेरो नाम आर्यन घिमिरे हो। " which is Nepali for "My name is Aryan Ghimire. " 
 text = input("\nEnter a word from 8-bit ASCII: ")
 print("") # For spacing to see the output better.
 
