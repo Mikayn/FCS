@@ -24,4 +24,4 @@ The project showcases database normalization for a College Club Membership Manag
 ---
 ### Initial Database
 
-![Unnormalized Dataset]([https://github.com/Mikayn/FCS/blob/main/Task3/diagrams/unnormalized_data.png](https://github.com/Mikayn/FCS/blob/main/Task%203/Pictures/Unnormalized%20Database.png)
+![initial databse] (https://github.com/Mikayn/FCS/blob/main/Task%203/Pictures/Unnormalized%20Database.png)
