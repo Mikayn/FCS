@@ -5,7 +5,7 @@
 </p>
 
 ## Overview
----
+
 This project demonstrates:
 * **Database Normalization**: Progressive transformation from unnormalized data through 1NF, 2NF, and 3NF
 * **Docker Deployment**: Containerized MySQL database for reproducible testing
