@@ -4,14 +4,20 @@
   <img src="https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql&logoColor=white" />
 </p>
 
-### Overview of the Problem: 
-The project showcases database normalization for a College Club Membership Management database. The prpject aims to remove redundancy, improve data integrity and fix any existing anomalies within the unnormalized database. 
-
-### This Project Inclues: 
-* Step-wise normalization of a database (1NF -> 2NF -> 3NF)
-* SQL Queries such as CREATE, SELECT, INSERT, JOIN
-* Entity Relation Model and Diagram
+## Overview
 ---
+This project demonstrates:
+* **Database Normalization**: Progressive transformation from unnormalized data through 1NF, 2NF, and 3NF
+* **Docker Deployment**: Containerized MySQL database for reproducible testing
+* **Real-world Application**: Campus Clubs management system simulation
+* **ER-Model**: Portray a database schema as an ER-Diagram.
+
+### Learning Objectives
+* Apply First, Second, and Third Normal Forms on unnormalized data
+* Implement normalized schemas using SQL  
+* Simulate realisic and practical database behavior  
+* Understand normalization as a security mechanism  
+
 ### Prior Information to Know: 
 * Primary Key : It is a column which has unique values and is used to identify each record in a table.
 * Foreign Key : It is a column or set of columns that references the primary key of another table.
