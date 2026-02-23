@@ -1,8 +1,8 @@
 -- Go into the database
-USE StudentInfo;
+USE club_information;
 
 -- 1NF TABLE
-CREATE TABLE StudentClub_1NF (
+CREATE TABLE studentinfo (
     StudentID INT,
     StudentName VARCHAR(100),
     Email VARCHAR(100),
@@ -13,7 +13,7 @@ CREATE TABLE StudentClub_1NF (
     PRIMARY KEY (StudentID, ClubName)
 );
 
-INSERT INTO StudentClub_1NF VALUES
+INSERT INTO studentinfo VALUES
 (1, 'Asha', 'asha@email.com', 'Music Club', 'R101', 'Mr. Raman', '2024-01-10'),
 (2, 'Bikash', 'bikash@email.com', 'Sports Club', 'R202', 'Ms. Sita', '2024-01-12'),
 (1, 'Asha', 'asha@email.com', 'Sports Club', 'R202', 'Ms. Sita', '2024-01-15'),
@@ -27,7 +27,7 @@ INSERT INTO StudentClub_1NF VALUES
 
 -- 2NF TABLE
 
-CREATE TABLE Students (          -- STUDENT TABLE
+CREATE TABLE Students (          
     StudentID INT PRIMARY KEY,
     StudentName VARCHAR(100),
     Email VARCHAR(100)
@@ -42,7 +42,7 @@ INSERT INTO Students VALUES
 (6, 'Pooja', 'pooja@email.com'),
 (7, 'Aman', 'aman@email.com');
 
-CREATE TABLE Clubs (            -- CLUB TABLE
+CREATE TABLE Clubs (            
     ClubName VARCHAR(100) PRIMARY KEY,
     ClubRoom VARCHAR(50),
     ClubMentor VARCHAR(100)
@@ -77,4 +77,28 @@ INSERT INTO Enrollment VALUES
 
 -- 3NF TABLE
 
--- 2NF TABLE AREADY IN 3NF
+-- Students Table and Enrollment Table does not need to be changed
+
+CREATE TABLE Mentors (
+    MentorID INT PRIMARY KEY,
+    MentorName VARCHAR(100)
+);
+
+INSERT INTO Mentors (MentorName) VALUES
+(1, 'Mr. Raman'),
+(2, 'Ms. Sita'),
+(3, 'Mr. Kiran'),
+('4, Mr. Anil');
+
+CREATE TABLE Clubs_3NF (
+    ClubName VARCHAR(100) PRIMARY KEY,
+    ClubRoom VARCHAR(50),
+    MentorID INT,
+    FOREIGN KEY (MentorID) REFERENCES Mentors(MentorID)
+);
+
+INSERT INTO Clubs_3NF (ClubName, ClubRoom, MentorID) VALUES
+('Music Club', 'R101', 1),
+('Sports Club', 'R202', 2),
+('Drama Club', 'R303', 3),
+('Coding Club', 'Lab1', 4);
