@@ -102,3 +102,10 @@ INSERT INTO Clubs_3NF (ClubName, ClubRoom, MentorID) VALUES
 ('Sports Club', 'R202', 2),
 ('Drama Club', 'R303', 3),
 ('Coding Club', 'Lab1', 4);
+
+-- JOIN Queries
+
+SELECT s.StudentName, c.ClubName, e.JoinDate
+    FROM Enrollment e
+    JOIN Students s ON s.StudentID = e.StudentID
+    JOIN Clubs_3NF c ON e.ClubName = c.ClubName;
