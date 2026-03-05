@@ -21,3 +21,21 @@ The final task focuses on designing a **college club membership management datab
 
 ## Repository Structure
 
+FCS/
+├── README.md                    # Currently here
+├── Task1/
+│   ├── README.md
+│   ├── images&output/
+│   ├── dockerstuff/
+│   └── scripts/
+├── Task2/
+│   ├── README.md
+│   ├── big_example.py
+│   ├── bruteforcer.py
+│   └── heuristic.py
+├── Task3_Database_Normalization/
+│   ├── README.md
+│   ├── Pictures/
+│   ├── commands/
+│   ├── output/
+└── LICENSE
