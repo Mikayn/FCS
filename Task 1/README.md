@@ -124,10 +124,10 @@ Or manually:
 curl -k https://localhost:4443/20CB.png -o downloaded.png
 ```
 
-**Observation**
-*TLS handshake occurs
-*Payload is encrypted in transit
-*MITM attacks fail without keys
+**Observation**  
+* TLS handshake occurs
+* Payload is encrypted in transit
+* MITM attacks fail without keys
 
 ---
 
