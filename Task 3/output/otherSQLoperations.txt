@@ -1,0 +1,39 @@
+==================================================
+Inserting a new student in the Students table
+==================================================
+
+=====================
+Aryan is inserted
+=====================
+
++-----------+-------------+------------------+
+| StudentID | StudentName | Email            |
++-----------+-------------+------------------+
+|         1 | Asha        | asha@email.com   |
+|         2 | Bikash      | bikash@email.com |
+|         3 | Nisha       | nisha@email.com  |
+|         4 | Rohan       | rohan@email.com  |
+|         5 | Suman       | suman@email.com  |
+|         6 | Pooja       | pooja@email.com  |
+|         7 | Aman        | aman@email.com   |
+|         8 | Rita        | rita@email.com   |
++-----------+-------------+------------------+
+
+==========================================
+Insering a new Club in the Clubs table 
+==========================================
+
+================================
+Cybersecurty CLub is inserted 
+================================
+
++-------------------+----------+------------+
+| ClubName          | ClubRoom | ClubMentor |
++-------------------+----------+------------+
+| Coding Club       | Lab1     | Mr. Anil   |
+| Cybersecurty Club | Lab2     | Mr. Rikesh |
+| Drama Club        | R303     | Mr. Kiran  |
+| Music Club        | R101     | Mr. Raman  |
+| Sports Club       | R202     | Ms. Sita   |
++-------------------+----------+------------+
+

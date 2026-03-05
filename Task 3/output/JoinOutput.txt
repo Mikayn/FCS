@@ -1,0 +1,18 @@
+==========================
+Join Operation Output
+==========================
+
++-------------+-------------+------------+
+| StudentName | ClubName    | JoinDate   |
++-------------+-------------+------------+
+| Asha        | Music Club  | 2024-01-10 |
+| Asha        | Sports Club | 2024-01-15 |
+| Bikash      | Drama Club  | 2024-01-25 |
+| Bikash      | Sports Club | 2024-01-12 |
+| Nisha       | Coding Club | 2024-01-28 |
+| Nisha       | Music Club  | 2024-01-20 |
+| Roshan      | Drama Club  | 2024-01-18 |
+| Suman       | Music Club  | 2024-01-22 |
+| Pooja       | Sports Club | 2024-01-27 |
+| Aman        | Coding Club | 2024-01-30 |
++-------------+-------------+------------+
