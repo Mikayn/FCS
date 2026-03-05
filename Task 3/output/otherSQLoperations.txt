@@ -16,7 +16,7 @@ Aryan is inserted
 |         5 | Suman       | suman@email.com  |
 |         6 | Pooja       | pooja@email.com  |
 |         7 | Aman        | aman@email.com   |
-|         8 | Rita        | rita@email.com   |
+|         8 | Aryan       | aryan@email.com  |
 +-----------+-------------+------------------+
 
 ==========================================
@@ -36,4 +36,5 @@ Cybersecurty CLub is inserted
 | Music Club        | R101     | Mr. Raman  |
 | Sports Club       | R202     | Ms. Sita   |
 +-------------------+----------+------------+
+
 
