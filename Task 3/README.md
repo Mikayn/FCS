@@ -123,9 +123,9 @@ Output table:
 
 Output tables:
 
-[Students Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt)
-[Clubs Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt)
-[Enrollment Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt)
+[Students Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt)  
+[Clubs Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt)  
+[Enrollment Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt)  
 
 ### Third Normal Form (3NF)
 
