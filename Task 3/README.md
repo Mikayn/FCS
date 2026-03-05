@@ -42,6 +42,30 @@ This project demonstrates:
 
 ---
 
+## Repository Structure 
+```
+Task 3/
+├── README.md                            # Main documentation
+├── Images/
+│   ├── ER diagram.png                   # Entity Relationship Diagram
+│   └── Unnormalized Database.png        # Unnormalized database schema
+├── commands/
+│   ├── join.sql                         # JOIN operations queries
+│   ├── normalization.sql                # Database normalization scripts
+│   ├── originaltable.sql                # Original unnormalized table creation
+│   └── otherSQLoperations.sql           # Additional SQL operations
+└── output/
+    ├── Clubs.txt                        # Clubs table data output
+    ├── Enrollment.txt                   # Enrollment table data output
+    ├── JoinOutput.txt                   # Results of JOIN operations
+    ├── Mentors.txt                      # Mentors table data output
+    ├── OriginalTable.txt                # Original table data output
+    ├── Students.txt                     # Students table data output
+    └── otherSQLoperations.txt           # Results of basic SQL operations
+```
+
+---
+
 ## Quick Start
 
 ### 1. Clone the Repository
