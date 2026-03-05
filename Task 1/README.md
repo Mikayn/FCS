@@ -54,13 +54,13 @@ cd Task 1/
 
 **Purpose**: Demonstrate binary-to-text encoding for SMTP compatibility.
 
-**Steps**
+**Steps**  
 ```bash
 cd scripts
 python Base64.py
 ```
-**Output**
-Image in base64: <a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/imagebase64.txt"> images&output/imagebase64.txt </a>
+**Output**   
+Image in base64: <a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/imagebase64.txt"> images&output/imagebase64.txt </a>    
 base64 restored into binary: <a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/base64restored.bin"> images&output/base64restored.bin </a>
 
 **Observation**
@@ -110,7 +110,6 @@ bash sslcert.sh
 cd dockerstuff
 bash servercontainer.sh
 ```
-
 This runs https_server.py inside a Docker container using the generated TLS certificate.
 
 ### Download File Securely (Client Side)
