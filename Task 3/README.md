@@ -155,6 +155,7 @@ INSERT INTO CLUB(ClubID, ClubName, ClubRoom, ClubMentor) VALUES (104, 'Photograp
 SELECT * FROM STUDENT;
 SELECT * FROM CLUB;
 ```
+Output Tables: [Inserting student and club](https://github.com/Mikayn/FCS/blob/main/Task%203/output/otherSQLoperations.txt)
 
 ### Join Query
 ```sql
@@ -163,4 +164,4 @@ FROM Enrollment e
 JOIN Students s ON e.StudentID = s.StudentID
 JOIN Clubs_3NF c ON e.ClubName = e.ClubName;
 ```
-
+Output Table: [Join Query](https://github.com/Mikayn/FCS/blob/main/Task%203/output/JoinOutput.txt)
