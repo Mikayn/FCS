@@ -28,6 +28,18 @@ For the sake of argument, let's consider the following constraints:
 
 ---
 
+## Repository Structure
+
+```
+task2/
+├── README.md                          # Project documentation and instructions
+├── bigOexample.py                     # Big O notation examples and demonstrations
+├── bruteforcer.py                     # Brute force algorithm implementation
+└── heuristic.py                       # Heuristic approach implementation
+```
+
+---
+
 ## Task 1: Understanding the Problem (P vs NP)
 
 ### P Problems
@@ -188,18 +200,6 @@ In real-world scenarios:
 | Speed           | Extremely slow | Very fast      |
 | Scalability     | Poor           | Good           |
 | Time Complexity | O(n!)          | ~O(n²)         |
-
----
-
-## Repository Structure
-
-```
-task2/
-├── README.md                          # Project documentation and instructions
-├── bigOexample.py                     # Big O notation examples and demonstrations
-├── bruteforcer.py                     # Brute force algorithm implementation
-└── heuristic.py                       # Heuristic approach implementation
-```
 
 ---
 
