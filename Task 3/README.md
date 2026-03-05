@@ -40,3 +40,95 @@ The initial table contains some major errors such as:
 * Insert anomalies
 * Deletion anomalies
 
+---
+
+## Quick Start
+
+### 1. Clone the Repository
+
+```bash
+https://github.com/Mikayn/FCS.git
+cd Task 3/
+```
+
+### 2. Start MySQL Docker Container
+```bash
+docker run --name clubs_db \
+  -e MYSQL_ROOT_PASSWORD=root \
+  -e MYSQL_DATABASE=club_information \
+  -d -p 3306:3306 \
+  mysql:8.0
+```
+
+### 3. Execute the Demo SQL Script
+```bash
+docker exec -i clubs_db mysql -uroot -proot club_information < normalization.sql
+```
+
+### 5. Verify Results
+```bash
+# Display all students
+docker exec clubs_db mysql -uroot -proot -t club_information -e "SELECT * FROM Students;"
+
+# Display all clubs
+docker exec clubs_db mysql -uroot -proot -t club_information -e "SELECT * FROM Clubs_3NF;"
+
+# Display all memberships with JOIN
+docker exec club_db mysql -uroot -proot -t club_information -e "
+SELECT s.StudentName, c.ClubName, e.JoinDate
+    FROM Enrollment e
+    JOIN Students s ON s.StudentID = e.StudentID
+    JOIN Clubs_3NF c ON e.ClubName = c.ClubName;"
+```
+
+---
+
+## Database Normalization
+### (Initial Table)
+
+```
+studentinfo(StudentID, StudentName, Email, ClubName, ClubRoom, ClubMentor, JoinDate)
+```
+
+### Problems:
+
+* Redundant Data: Students appear multiple times for different clubs.
+* Insert Anomaly: Adding a new club without members requires NULLs.
+* Update Anomaly: Changing a mentor’s name must be repeated in multiple rows.
+* Delete Anomaly: Removing the last student in a club deletes the club information.
+
+### First Normal Form (1NF)
+
+* Ensure each field is atomic.
+* Primary Key: (StudentID, ClubName) .
+
+Table:
+```
+studentinfo(StudentID, StudentName, Email, ClubName, ClubRoom, ClubMentor, JoinDate) 
+```
+
+### Second Normal Form (2NF)
+
+* Remove partial dependencies.
+* Separate club details from student details.
+
+Tables:
+```
+Students(StudentID, StudentName, Email)
+Clubs(ClubName, ClubRoom, ClubMentor)
+Enrollment(StudentID, ClubName, JoinDate)
+```
+
+### Third Normal Form (3NF)
+
+* Remove transitive dependencies.
+* Ensure all attributes depend only on the primary key.
+
+Tables:
+```
+Students(StudentID, StudentName, Email)
+Clubs_3NF(ClubName, ClubRoom, MentorID)
+Enrollment(StudentID, ClunBame, JoinDate)
+Mentors(MentorID, ClubMentor)
+```
+
