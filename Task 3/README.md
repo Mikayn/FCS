@@ -165,3 +165,14 @@ JOIN Students s ON e.StudentID = s.StudentID
 JOIN Clubs_3NF c ON e.ClubName = e.ClubName;
 ```
 Output Table: [Join Query](https://github.com/Mikayn/FCS/blob/main/Task%203/output/JoinOutput.txt)
+
+### The importance of JOIN in a normalized database
+
+In a normalized database, information is scattered into multiple tables to reduce data redundancy and repetition. But, most queries require the data from two or more tables. So, JOIN can be used to join them into a single table. For instance, the data of students, their clubs and the club mentors may be needed. Instead of doing 3 SELECT statements for 3 tables, one JOIN statement can retrieve the information and combine them into a single table. 
+
+---
+
+## References
+
+* Database Management System By PK Yadav Book. (2026). Bookpremiumfree.com.
+* DBMS By gdcnagari
