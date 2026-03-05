@@ -20,7 +20,7 @@ The final task focuses on designing a **college club membership management datab
 ---
 
 ## Repository Structure
-
+```
 FCS/
 ├── README.md                    # Currently here
 ├── Task1/
@@ -39,3 +39,4 @@ FCS/
 │   ├── commands/
 │   ├── output/
 └── LICENSE
+```
