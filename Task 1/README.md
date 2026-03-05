@@ -80,7 +80,7 @@ python QuotedPrintable.py
 
 **Output**
 
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task 1/images%26output/quotedprintable.txt"> Non-ascii text in quoted printable </a> `
+<a href="https://github.com/Mikayn/FCS/blob/main/Task 1/images%26output/quotedprintable.txt"> Non-ascii text in quoted printable </a> 
 Decoded output matches original input
 
 **Observation**
