@@ -33,7 +33,7 @@ FCS/
 │   ├── big_example.py
 │   ├── bruteforcer.py
 │   └── heuristic.py
-├── Task3_Database_Normalization/
+├── Task3/
 │   ├── README.md
 │   ├── Pictures/
 │   ├── commands/
