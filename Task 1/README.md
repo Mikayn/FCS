@@ -60,8 +60,8 @@ cd scripts
 python Base64.py
 ```
 **Output**
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/imagebase64.txt"> Image in base 64 </a>`   
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/base64restored.bin"> base64 restored into binary </a>`  
+Image in base64: <a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/imagebase64.txt"> images&output/imagebase64.txt </a>
+base64 restored into binary: <a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/base64restored.bin"> images&output/base64restored.bin </a>
 
 **Observation**
 * Encoded data is ASCII-safe
@@ -80,7 +80,7 @@ python QuotedPrintable.py
 
 **Output**
 
-<a href="https://github.com/Mikayn/FCS/blob/main/Task 1/images%26output/quotedprintable.txt"> Non-ascii text in quoted printable </a> 
+Non-ascii text in quoted printable : <a href="https://github.com/Mikayn/FCS/blob/main/Task 1/images%26output/quotedprintable.txt"> images&output/quotedprintable.txt </a>   
 Decoded output matches original input
 
 **Observation**
@@ -100,8 +100,8 @@ cd dockerstuff
 bash sslcert.sh
 ```
 **Output**
-` cert.pem  
-key.pem `
+`cert.pem`   
+`key.pem `
 
 ### Start HTTPS Server in Docker
 
