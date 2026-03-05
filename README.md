@@ -40,3 +40,14 @@ FCS/
 │   ├── output/
 └── LICENSE
 ```
+
+---
+## Acknowledgements
+* **Rupak Rajbanshi** - Module teacher for Foundations of Computer Science for his invaluable guidance.
+
+---
+
+## Author 
+* **Aryan Ghimire**
+* Last Updated: March 2026
+
