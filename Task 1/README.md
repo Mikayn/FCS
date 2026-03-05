@@ -60,8 +60,8 @@ cd scripts
 python Base64.py
 ```
 **Output**
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/imagebase64.txt">Image in base 64</a>`  
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/base64restored.bin">base64 restored into binary</a>`  
+`<a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/imagebase64.txt"> Image in base 64 </a>`   
+`<a href="https://github.com/Mikayn/FCS/blob/main/Task%201/images%26output/base64restored.bin"> base64 restored into binary </a>`  
 
 **Observation**
 * Encoded data is ASCII-safe
