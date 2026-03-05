@@ -112,9 +112,9 @@ studentinfo(StudentID, StudentName, Email, ClubName, ClubRoom, ClubMentor, JoinD
 * Primary Key: (StudentID, ClubName) .
 
 Output table:
-```
+
 [1NF Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/OriginalTable.txt)
-```
+
 
 ### Second Normal Form (2NF)
 
@@ -122,11 +122,10 @@ Output table:
 * Separate club details, student details and enrollment details.
 
 Output tables:
-```
+
 [Students Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt)
 [Clubs Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt)
 [Enrollment Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt)
-```
 
 ### Third Normal Form (3NF)
 
