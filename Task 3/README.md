@@ -32,13 +32,13 @@ This project demonstrates:
 
 ![initial databse](https://github.com/Mikayn/FCS/blob/main/Task%203/Pictures/Unnormalized%20Database.png)
 
-The initial table contains some major errors such as:
 
-* Duplicate information
-* Redundant data
-* Update anomalies
-* Insert anomalies
-* Deletion anomalies
+### Problems:
+
+* Redundant Data: Students appear multiple times for different clubs.
+* Insert Anomaly: Adding a new club without members requires NULLs.
+* Update Anomaly: Changing a mentor’s name must be repeated in multiple rows.
+* Delete Anomaly: Removing the last student in a club deletes the club information.
 
 ---
 
@@ -98,13 +98,6 @@ docker exec clubs_db mysql -uroot -proot -t club_information -e "SELECT * FROM E
 ```
 studentinfo(StudentID, StudentName, Email, ClubName, ClubRoom, ClubMentor, JoinDate)
 ```
-
-### Problems:
-
-* Redundant Data: Students appear multiple times for different clubs.
-* Insert Anomaly: Adding a new club without members requires NULLs.
-* Update Anomaly: Changing a mentor’s name must be repeated in multiple rows.
-* Delete Anomaly: Removing the last student in a club deletes the club information.
 
 ### First Normal Form (1NF)
 
