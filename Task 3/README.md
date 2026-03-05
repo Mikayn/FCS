@@ -140,3 +140,27 @@ Tables:
 * One student can join many clubs
 * One club can have many students
 
+---
+
+## SQL Operations
+
+### Insert New Records
+```sql
+INSERT INTO STUDENT(StudentID, StudentName, Email) VALUES (8, 'Riya', 'riya@email.com');
+INSERT INTO CLUB(ClubID, ClubName, ClubRoom, ClubMentor) VALUES (104, 'Photography Club', 'Lab2', 'Ms. Tara');
+```
+
+### Display Records
+```sql
+SELECT * FROM STUDENT;
+SELECT * FROM CLUB;
+```
+
+### Join Query
+```sql
+SELECT s.StudentName, c.ClubName, e.JoinDate
+FROM Enrollment e
+JOIN Students s ON e.StudentID = s.StudentID
+JOIN Clubs_3NF c ON e.ClubName = e.ClubName;
+```
+
