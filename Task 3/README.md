@@ -130,7 +130,7 @@ studentinfo(StudentID, StudentName, Email, ClubName, ClubRoom, ClubMentor, JoinD
 
 Output table:
 
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/OriginalTable.txt">Original Table</a>`  
+<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/OriginalTable.txt">Original Table</a>
 
 
 ### Second Normal Form (2NF)
@@ -140,9 +140,9 @@ Output table:
 
 Output tables:
 
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt">Students Table</a>`  
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt">Clubs Table</a>` 
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt">Enrollment Table</a>` 
+<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt">Students Table</a>   
+<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt">Clubs Table</a>   
+<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt">Enrollment Table</a>    
 
 ### Third Normal Form (3NF)
 
@@ -151,10 +151,10 @@ Output tables:
 
 Tables:
 
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt">Students Table</a>`  
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs_3NF.txt">Clubs_3NF Table</a>`  
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt">Enrollment Table</a>`  
-`<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Mentors.txt">Mentors Table</a>`  
+<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt">Students Table</a>   
+<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs_3NF.txt">Clubs_3NF Table</a>    
+<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt">Enrollment Table</a>    
+<a href="https://github.com/Mikayn/FCS/blob/main/Task%203/output/Mentors.txt">Mentors Table</a>    
 
 ## Entity Relation Diagram
 
