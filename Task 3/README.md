@@ -141,7 +141,7 @@ Tables:
 
 ## Entity Relation Diagram
 
-![ER Diagram](https://github.com/Mikayn/FCS/blob/main/Task%203/Pictures/ER%20Diagram.png)
+![ER Diagram](https://github.com/Mikayn/FCS/blob/main/Task%203/Pictures/ER%20diagram.png)
 
 ### Relationships: 
 * One student can join many clubs
