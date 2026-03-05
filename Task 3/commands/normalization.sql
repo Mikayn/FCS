@@ -1,5 +1,5 @@
 -- Go into the database
-USE StudentInfo;
+USE club_information;
 
 -- 1NF TABLE
 CREATE TABLE StudentClub_1NF (
@@ -104,3 +104,4 @@ INSERT INTO Clubs_3NF (ClubName, ClubRoom, MentorID) VALUES
 ('Sports Club', 'R202', 2),
 ('Drama Club', 'R303', 3),
 ('Coding Club', 'Lab1', 4);
+
