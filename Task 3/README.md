@@ -62,10 +62,20 @@ docker run --name clubs_db \
 
 ### 3. Execute the Demo SQL Script
 ```bash
-docker exec -i clubs_db mysql -uroot -proot club_information < normalization.sql
+# Create original table
+docker exec -i clubs_db mysql -uroot -proot club_information < commands/originaltable.sql
+
+# Normalize the table
+docker exec -i clubs_db mysql -uroot -proot club_information < commands/normalization.sql
+
+# Basic SQL operations
+docker exec -i clubs_db mysql -uroot -proot club_information < commands/otherSQLoperations.sql
+
+# Run JOIN queries
+docker exec -i clubs_db mysql -uroot -proot club_information < commands/join.sql
 ```
 
-### 5. Verify Results
+### 4. Verify Results
 ```bash
 # Display all students
 docker exec clubs_db mysql -uroot -proot -t club_information -e "SELECT * FROM Students;"
@@ -73,12 +83,11 @@ docker exec clubs_db mysql -uroot -proot -t club_information -e "SELECT * FROM S
 # Display all clubs
 docker exec clubs_db mysql -uroot -proot -t club_information -e "SELECT * FROM Clubs_3NF;"
 
-# Display all memberships with JOIN
-docker exec club_db mysql -uroot -proot -t club_information -e "
-SELECT s.StudentName, c.ClubName, e.JoinDate
-    FROM Enrollment e
-    JOIN Students s ON s.StudentID = e.StudentID
-    JOIN Clubs_3NF c ON e.ClubName = c.ClubName;"
+# Display all mentors
+docker exec clubs_db mysql -uroot -proot -t club_information -e "SELECT * FROM Mentors;"
+
+# Display all enrollments
+docker exec clubs_db mysql -uroot -proot -t club_information -e "SELECT * FROM Enrollments;"
 ```
 
 ---
@@ -102,21 +111,21 @@ studentinfo(StudentID, StudentName, Email, ClubName, ClubRoom, ClubMentor, JoinD
 * Ensure each field is atomic.
 * Primary Key: (StudentID, ClubName) .
 
-Table:
+Output table:
 ```
-studentinfo(StudentID, StudentName, Email, ClubName, ClubRoom, ClubMentor, JoinDate) 
+[1NF Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/OriginalTable.txt)
 ```
 
 ### Second Normal Form (2NF)
 
 * Remove partial dependencies.
-* Separate club details from student details.
+* Separate club details, student details and enrollment details.
 
-Tables:
+Output tables:
 ```
-Students(StudentID, StudentName, Email)
-Clubs(ClubName, ClubRoom, ClubMentor)
-Enrollment(StudentID, ClubName, JoinDate)
+[Students Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt)
+[Clubs Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt)
+[Enrollment Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt)
 ```
 
 ### Third Normal Form (3NF)
@@ -126,9 +135,18 @@ Enrollment(StudentID, ClubName, JoinDate)
 
 Tables:
 ```
-Students(StudentID, StudentName, Email)
-Clubs_3NF(ClubName, ClubRoom, MentorID)
-Enrollment(StudentID, ClunBame, JoinDate)
-Mentors(MentorID, ClubMentor)
+[Students Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt)
+[Clubs Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt)
+[Enrollment Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt)
+[Mentors Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Mentors.txt)
+
 ```
+
+## Entity Relation Diagram
+
+![ER Diagram](https://github.com/Mikayn/FCS/blob/main/Task%203/Pictures/ER%20Diagram.png)
+
+### Relationships: 
+* One student can join many clubs
+* One club can have many students
 
