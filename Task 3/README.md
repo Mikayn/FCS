@@ -133,13 +133,11 @@ Output tables:
 * Ensure all attributes depend only on the primary key.
 
 Tables:
-```
-[Students Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt)
-[Clubs Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt)
-[Enrollment Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt)
-[Mentors Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Mentors.txt)
 
-```
+[Students Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Students.txt)  
+[Clubs Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Clubs.txt)  
+[Enrollment Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Enrollment.txt)  
+[Mentors Table](https://github.com/Mikayn/FCS/blob/main/Task%203/output/Mentors.txt)  
 
 ## Entity Relation Diagram
 
