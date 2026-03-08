@@ -170,14 +170,14 @@ Tables:
 
 ### Insert New Records
 ```sql
-INSERT INTO STUDENT(StudentID, StudentName, Email) VALUES (8, 'Riya', 'riya@email.com');
-INSERT INTO CLUB(ClubID, ClubName, ClubRoom, ClubMentor) VALUES (104, 'Photography Club', 'Lab2', 'Ms. Tara');
+INSERT INTO STUDENT(StudentID, StudentName, Email) VALUES (8, 'Aryan', 'aryan@email.com');
+INSERT INTO CLUB(ClubID, ClubName, ClubRoom, ClubMentor) VALUES (104, 'Cybersecurity Club', 'Lab2', 'Mr. Rikesh');
 ```
 
 ### Display Records
 ```sql
-SELECT * FROM STUDENT;
-SELECT * FROM CLUB;
+SELECT * FROM Students;
+SELECT * FROM Clubs_3NF;
 ```
 Output Tables: [Inserting student and club](https://github.com/Mikayn/FCS/blob/main/Task%203/output/otherSQLoperations.txt)
 
